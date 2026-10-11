@@ -1,53 +1,35 @@
-# Workshop Title
+# 3D Geometry Generation for Scientific Computing (3D4S)
 
-Welcome to the GitHub repository for our upcoming workshop, "Workshop Title". This workshop is designed to bring together industry professionals and enthusiasts for a day of learning, sharing, and networking.
+Static workshop website: https://3d4sworkshop.github.io/
 
-## About the Workshop
+## Editions
 
-[Provide a brief overview of the workshop, including its purpose, who it's for, and what participants can expect to gain from attending.]
+- `/` and `/cfp.html`: the third edition, planned for CVPR 2027.
+- `/2026/` and `/2026/cfp.html`: the second edition at CVPR 2026, with its original speakers, organizers, program, and submission information.
+- [WACV 2024](https://sites.google.com/view/wacv-site-3d-geometry/home): the first edition, maintained on its original Google Site.
 
-## Agenda
+The root always hosts the latest edition, following the structure of the Foundation Models for Science workshop site. The CVPR 2027 theme is "3D Geometry Generation for Scientific Computing: Agentic 3D/4D Modeling for Scientific Simulation and Design." The site lists six organizers, no invited speakers yet, a proposed half-day program, and tentative dates for a non-archival CFP. Acceptance, speakers, dates, and logistics remain subject to confirmation. Research links are background reading and are not required citations.
 
-Here's what you can expect at the workshop:
+## Keeping past editions available
 
-- **9:00 AM:** Opening Remarks
-- **9:30 AM:** Keynote Speaker: [Speaker Name]
-- **10:30 AM:** Coffee Break
-- [Continue with the rest of the agenda]
+Before preparing a new edition:
 
-## Speakers
+1. Copy the current root HTML, CSS, JavaScript, images, and downloadable files into a folder named for the outgoing year.
+2. Keep the archive self-contained. Its header, footer, navigation, styles, scripts, and images use paths relative to its own folder.
+3. Update the root pages for the new edition. Keep unconfirmed dates, speakers, organizers, and submission details explicitly pending.
+4. Update the "Workshops by Year" menu in the root and each archived `navbar.html`. Archived section links stay within that edition; the latest-workshop link returns to the root.
+5. Check both home and call-for-papers pages for each edition, including images, section anchors, and the year menu.
 
-Meet our distinguished speakers:
+The 2026 archive preserves the previous site content and assets. Its navigation adds the year menu; Bootstrap uses its matching bundle so the dropdown works; template loading preserves section deep links; the missing `Styles.zip` link points to the official CVPR 2026 author guidelines and template instead.
 
-- **[Speaker Name]** - [Brief Bio]
-- [Add more speakers as necessary]
+## Local preview
 
-## Location & Time
+Run from this directory:
 
-- **Date:** [Date]
-- **Time:** [Start Time] - [End Time]
-- **Venue:** [Venue Name], [Address]
+```sh
+python3 -m http.server 8000
+```
 
-## How to Use This Repository
+Open `http://localhost:8000/` and `http://localhost:8000/2026/`. Use an HTTP server because the pages fetch `header.html`, `navbar.html`, and `footer.html` dynamically.
 
-This repository hosts the static website for the workshop, accessible at `https://yourusername.github.io`. Here's how you can use it:
-
-- **For Participants:** Visit the [workshop website](https://yourusername.github.io) for the latest information on the agenda, speakers, and logistics.
-- **For Contributors:** If you'd like to contribute to the website or suggest changes, please feel free to fork the repository, make your changes, and submit a pull request.
-
-## Contributing
-
-We welcome contributions from the community! If you have suggestions for improving the website or any related materials, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -am 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a new Pull Request.
-
-## Contact
-
-For more information about the workshop, please contact us at [Your Email].
-
-Thank you for your interest in our workshop. We look forward to seeing you there!
-
+There is no build step. Publish the repository root through GitHub Pages as before.

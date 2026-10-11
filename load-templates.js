@@ -1,18 +1,28 @@
 function loadHTML(elementId, filePath) {
-    fetch(filePath)
-        .then(response => response.text())
+    return fetch(filePath, { cache: 'no-cache' })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to load ${filePath}: ${response.status}`);
+            }
+            return response.text();
+        })
         .then(data => {
             document.getElementById(elementId).innerHTML = data;
-            if (elementId === 'footer') {
-                // Ensure we scroll to top after loading all dynamic content
-                window.scrollTo(0, 0);
-            }
         });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    window.scrollTo(0, 0);  // Ensure scroll to top on page load
-    loadHTML('header', 'header.html');
-    loadHTML('navbar', 'navbar.html');
-    loadHTML('footer', 'footer.html');
+    Promise.all([
+        loadHTML('header', 'header.html'),
+        loadHTML('navbar', 'navbar.html'),
+        loadHTML('footer', 'footer.html')
+    ]).then(() => {
+        // Restore deep links after the templates have shifted the page layout.
+        const section = document.getElementById(window.location.hash.slice(1));
+        if (section) {
+            section.scrollIntoView();
+        } else if (!window.location.hash) {
+            window.scrollTo(0, 0);
+        }
+    }).catch(error => console.error(error));
 });

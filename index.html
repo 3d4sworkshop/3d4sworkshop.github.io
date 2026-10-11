@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>3D4Science (CVPR'26)</title>
+    <title>3D4S at CVPR 2027 | Agentic 3D/4D Modeling for Scientific Simulation and Design</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./style.css?v=2027-agentic" rel="stylesheet" type="text/css" media="all" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1Z1X517DK"></script>
@@ -24,358 +24,167 @@
     <div class="container mt-5">
         <article>
             <section id="home" class="Description">
-                <h2>Description</h2>
-                <p>The integration of AI and machine learning into scientific computing, particularly in 3D and 4D geometry generation, is transforming how complex, dynamic phenomena are understood and modeled. Traditional 2D approaches are proving inadequate in capturing the full scope of multi-scale, heterogeneous scientific data, limiting the accuracy and applicability of simulations across such diverse fields as climate science, urban planning, and biomedicine. The ability to reconstruct high-fidelity 3D geometries enables more precise analysis of natural environments and man-made systems, driving breakthroughs in predictive modeling and hypothesis generation. As scientific challenges become more intricate — ranging from glacier melt patterns to urban infrastructure planning under extreme weather — accurate, scalable 3D methods are increasingly essential.</p>
-
-                <p>To tackle these challenges, this workshop seeks not only to surface key research questions but also to build an active and interdisciplinary community at the intersection of computer vision and scientific domains. By bringing together researchers, practitioners, and domain experts, we aim to spark meaningful dialogue, initiate new collaborations, and create lasting connections that extend beyond the event itself. This raises a set of new questions:</p>
-                <ul style="list-style-type:none;">
-                    <li><strong>Q1:</strong> <em>How to develop scalable, high-fidelity 3D/4D methods that seamlessly integrate heterogeneous views to represent complex and multi-scale scientific data?</em></li>
-                    <li><strong>Q2:</strong> <em>How to optimize 3D/4D vision models with an awareness of and for the purposes of addressing downstream scientific problems?</em></li>
-                    <li><strong>Q3:</strong> <em>How to balance the computational efficiency and accuracy in real-time 3D/4D reconstructions for scientific problems?</em></li>
-                  </ul>
+                <h2>Agentic modeling for scientific questions</h2>
+                <p class="scope-statement">We study AI-agent methods that reconstruct, generate, or refine 3D structures and time-varying 3D models for scientific inference, physical simulation, or function-driven design, evaluated beyond visual appearance.</p>
+                <p>Scientific simulation and design require 3D/4D models whose geometry, motion, and physical properties support reliable predictions. The third 3D4S workshop explores AI agents that reconstruct, generate, and refine these models through measurement, geometric verification, and numerical simulation. We bring together computer vision, graphics, scientific computing, and domain science to study tool orchestration, uncertainty, physical validity, and evaluation beyond visual appearance. Through invited talks, contributed papers, posters, and a structured discussion, participants will develop shared evaluation criteria and reproducible workflows for agentic modeling in engineering, environmental science, biomedicine, and materials research.</p>
+                <p><strong>What do we mean by agentic?</strong> An agent selects or revises modeling actions using observations, tool outputs, or feedback. We welcome tool-using language and vision-language agents, learned controllers, and human-agent collaboration. <strong>4D means time-varying 3D</strong>, including geometry, motion, and physical properties.</p>
+                <div class="modeling-loop" aria-label="Scientific modeling workflow">Observe or specify &rarr; Build a model &rarr; Verify geometry &rarr; Simulate or measure &rarr; Diagnose and revise</div>
+                <p>The scientific question comes first: a force, flux, deformation, material property, or functional constraint. The goal is to understand when adaptive modeling produces reliable scientific evidence and when it fails.</p>
+                <p>Building on <a href="https://sites.google.com/view/wacv-site-3d-geometry/home">WACV 2024</a> and <a href="2026/index.html">CVPR 2026</a>, our third edition connects reconstruction and generation to agent-directed scientific workflows. CVPR 2026 brought together 150 attendees and received 21 paper submissions.</p>
             </section>
 
             <section id="topics" class="Topics">
-                <h2>Topics</h2>
-                <p>In this workshop, we aim to bring together experts from computer vision and scientific problems, spur discussions, and foster collaborations on broad and transformative questions and challenges (include but not limited to):</p>
-                <ul>
-                    <li>Multi-scale Patterns: How can 3D/4D models effectively capture both fine-grained and large-scale details in complex scientific datasets, such as fluid and smoke?</li>
-                    <li>Large-scale Scenes: What techniques can improve the scalability of 3D/4D reconstructions for large environments like cities, forests, or glaciers, without sacrificing accuracy or computational feasibility?</li>
-                    <li>Heterogeneous Views: How can we effectively integrate data from multiple sources (e.g., satellite, LiDAR, drone, mobile devices) to produce accurate and seamless 3D models while minimizing noise and alignment issues?</li>
-                    <li>Dynamic and Time-varying Views: What methods can improve temporal coherence in 4D reconstructions of dynamic scenes, such as fast-moving natural systems or urban traffic, while avoiding artifacts?</li>
-                    <li>Complex and Unstructured Geometries: How can 3D/4D models better handle irregular, unstructured geometries found in natural environments like mountains or coral reefs, particularly in the presence of sharp features?</li>
-                    <li>Occlusions and Missing Observations: What techniques can be developed to fill gaps in occluded or incomplete data in real-world scenarios, ensuring accurate reconstructions despite missing perspectives or environmental obstacles?</li>
-                    <li>Computational Complexity: How can we reduce the computational cost of high-quality 3D/4D reconstructions, especially for real-time or large-scale applications that require high-resolution output?</li>
-                    <li>Generalization and Scene Adaptability: What approaches can help 3D/4D models generalize to new environments without retraining, enabling wider applicability across different scientific domains?</li>
-                    <li>Real-time Rendering for Dynamic Scenes: How can we achieve real-time rendering for dynamic 4D scenes in complex environments, such as simulating natural disasters or fast-moving ecosystems?</li>
-                    <li>Lighting and Viewpoint Variations: What novel algorithms can improve the robustness of 3D reconstructions in variable lighting or challenging viewpoints (e.g., low-light conditions or extreme weather)?</li>
-                </ul>
-                <p><strong>Scientific Domains.</strong> We invite paper submissions from various scientific domains, including but not limited to: Fluid Dynamics, Climate and Glaciology, Biomedicine and Medical Research, Astronomy and Planetary Science, Material Science, Physics and High Energy Research, Astrophysics and Space Science, Computational Modeling and Forecasting, Earth Science, Chemistry and Small Molecules, Ecology and Environmental Studies, Geosciences and Geology, Urban Planning and Architecture. Applications-driven submissions focusing on 3D/4D reconstructions for scientific data are also highly encouraged.</p>
+                <h2>Topics and open questions</h2>
+                <ol>
+                    <li><strong>Measurement-grounded reconstruction.</strong> Agents that combine images, depth, LiDAR, tomography, and trajectories to recover 3D geometry, motion, and physical properties, and choose additional observations when evidence is insufficient.</li>
+                    <li><strong>Geometry for numerical simulation.</strong> Mesh and CAD repair, implicit-to-mesh conversion, unit and coordinate checks, boundary preservation, discretization, and reliable interfaces between visual models and solvers.</li>
+                    <li><strong>Function-driven generation and inverse design.</strong> Geometry revised using aerodynamic, structural, transport, fabrication, or material objectives, with explicit constraints and comparisons across simulation fidelities.</li>
+                    <li><strong>Dynamic modeling and physical identification.</strong> Time-varying shape, deformable objects, interactions, constitutive parameters, and boundary conditions, tested on unseen observations or physical behavior.</li>
+                    <li><strong>Scientific tool use and collaboration.</strong> Adaptive tool selection, solver feedback, execution recovery, provenance, specialist agents, and human review, compared with fixed workflows using matched resources.</li>
+                    <li><strong>Evaluation, uncertainty, and reproducibility.</strong> Independent validation, uncertainty propagation, negative results, held-out conditions, and scientific progress measured against compute and human effort.</li>
+                </ol>
+                <p>Applications include engineering design, fluid and solid mechanics, environmental and geospatial science, biomedical modeling, scientific instruments, and molecular or crystal structures when geometry or dynamics is central to the task. Contributions may study one part of the modeling loop if they make the scientific objective explicit. Purely appearance-driven generation and generic agents without a substantive 3D/4D modeling connection fall outside the core scope.</p>
             </section>
 
+            <section id="evaluation">
+                <h2>What counts as scientific evidence?</h2>
+                <div class="table-responsive"><table class="table table-striped">
+                    <thead><tr><th scope="col">Evidence</th><th scope="col">What it supports</th></tr></thead>
+                    <tbody>
+                        <tr><td>Appearance agreement</td><td>Consistency with observed images or visual specifications.</td></tr>
+                        <tr><td>Geometric validity</td><td>Dimensions, topology, contact, assembly, and mesh requirements.</td></tr>
+                        <tr><td>Numerical physical validity</td><td>Behavior under stated equations, materials, boundary conditions, and solver checks.</td></tr>
+                        <tr><td>Independent validation</td><td>Agreement with held-out measurements, experiments, or downstream physical outcomes.</td></tr>
+                    </tbody>
+                </table></div>
+                <p>A successful rendering, executable model, or stable simulation does not by itself establish predictive accuracy. We encourage comparisons with fixed workflows under matched tools and budgets, uncertainty and sensitivity analysis, and reporting of failed attempts and human intervention.</p>
+                <p>Our evaluation clinic will refine a reporting checklist around the scientific objective, agent actions, geometry checks, solver validity, independent evidence, and total resources. We aim to share the checklist and discussion synthesis within four weeks of the workshop.</p>
+            </section>
+
+            <section id="research">
+                <h2>Research motivating the theme</h2>
+                <p>These papers illustrate emerging directions, including preprints. They are background reading, not a list of invited speakers or required citations.</p>
+                <ul class="reading-list">
+                    <li id="xu2025cfdagent"><a href="https://arxiv.org/abs/2507.23693" target="_blank" rel="noopener noreferrer"><strong>CFDagent: A Language-Guided, Zero-Shot Multi-Agent System for Complex Flow Simulation</strong></a> (2025; arXiv preprint arXiv:2507.23693). Geometry generation and meshing connected to a flow solver; quantitative validation on canonical sphere flows.</li>
+                    <li id="xu2026kinematics"><a href="https://doi.org/10.1016/j.taml.2026.100734" target="_blank" rel="noopener noreferrer"><strong>CFDAgent with a general kinematics module: driving biological flapping flight simulation</strong></a> (2026; Theoretical and Applied Mechanics Letters). Agent-orchestrated moving-boundary CFD connects geometry and motion to aerodynamic quantities.</li>
+                    <li id="berger2026physics"><a href="https://www.ijcai.org/proceedings/2026/714" target="_blank" rel="noopener noreferrer"><strong>Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design</strong></a> (2026; IJCAI 2026). Iterative CAD design with explicit engineering feedback motivates function-driven geometric generation.</li>
+                    <li id="son2026cad"><a href="https://arxiv.org/abs/2605.17448" target="_blank" rel="noopener noreferrer"><strong>Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback</strong></a> (2026; arXiv preprint arXiv:2605.17448). A benchmark separates plausible CAD from assembled designs satisfying geometric and structural requirements.</li>
+                    <li id="chen2026real2sim"><a href="https://arxiv.org/abs/2607.19190" target="_blank" rel="noopener noreferrer"><strong>Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents</strong></a> (2026; arXiv preprint arXiv:2607.19190). Real recordings become physical simulation episodes with downstream policy evaluation; applicability must be assessed per task.</li>
+                    <li id="wang2026pimix"><a href="https://arxiv.org/abs/2606.19670" target="_blank" rel="noopener noreferrer"><strong>PiMiX 2.0: AI-enhanced Data Fusion for Radiographic Imaging and Tomography</strong></a> (2026; arXiv preprint arXiv:2606.19670). A framework connecting measurements, time-resolved reconstruction, and agentic analysis; an agenda for scientific 4D modeling.</li>
+                    <li id="hill2026grace"><a href="https://arxiv.org/abs/2602.15039" target="_blank" rel="noopener noreferrer"><strong>GRACE: an Agentic AI for Particle Physics Experiment Design and Simulation</strong></a> (2026; arXiv preprint arXiv:2602.15039). Detector geometry and configuration are revised against simulation objectives; conclusions depend on the physical model.</li>
+                    <li id="shi2026matbrain"><a href="https://arxiv.org/abs/2604.11540" target="_blank" rel="noopener noreferrer"><strong>A collaborative agent with two lightweight synergistic models for autonomous crystal materials research</strong></a> (2026; arXiv preprint arXiv:2604.11540). Crystal structure generation appears within an agent-directed materials workflow; computational candidates require separate experimental validation.</li>
+                </ul>
+            </section>
 
             <section id="speakers" class="Speakers">
-                <h2>Confirmed Speakers (A-Z by Last Name)</h2>
-                <!-- <div class="speaker">
-                    <img src="images/kevintcarlberg.jpg" alt="Kevin T. Carlberg">
-                    <div class="speaker-info">
-                        <h3><a href="https://kevintcarlberg.net/" target="_blank">Kevin T. Carlberg</a></h3>
-                        <p>Director, AI Research Science at Meta</p>
-                        <p>Affiliate Associate Professor, Applied Mathematics and Mechanical Engineering, University of Washington</p>
-                    </div>
-                </div> -->
-                <!-- <div class="speaker">
-                    <img src="images/mengyu_chu.jpg" alt="Mengyu (Rachel) Chu">
-                    <div class="speaker-info">
-                        <h3><a href="https://rachelcmy.github.io/" target="_blank">Mengyu (Rachel) Chu</a></h3>
-                        <p>Assistant Professor, the School of Intelligence Science and Technology, Peking University</p>
-                    </div>
-                </div> -->
-                <!-- <div class="speaker">
-                    <img src="images/kenny_erleben.jpeg" alt="Kenny Erleben">
-                    <div class="speaker-info">
-                        <h3><a href="https://erleben.github.io/" target="_blank">Kenny Erleben</a></h3>
-                        <p>Professor, Department of Computer Science, University of Copenhagen</p>
-                    </div>
-                </div> -->
-                <div class="speaker">
-                    <img src="images/chuang_gan.jpg" alt="Chuang Gan">
-                    <div class="speaker-info">
-                        <h3><a href="https://embodied-agi.cs.umass.edu/" target="_blank">Chuang Gan</a></h3>
-                        <p>Assistant Professor, UMass Amherst</p>
-                        <p>Research Manager, MIT-IBM Watson AI Lab</p>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <img src="images/eitan_grinspun.png" alt="Eitan Grinspun">
-                    <div class="speaker-info">
-                        <h3><a href="https://www.dgp.toronto.edu/~eitan/" target="_blank">Eitan Grinspun</a></h3>
-                        <p>Professor, University of Toronto</p>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <img src="images/ali_haddad.jpg" alt="Ali Haddad">
-                    <div class="speaker-info">
-                        <h3><a href="https://www.linkedin.com/in/ali-haddad-2a8ba7105/" target="_blank">Ali Haddad</a></h3>
-                        <p>CEO and Founder, XRlabs</p>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <img src="images/danny_kaufman.jpg" alt="Danny Kaufman">
-                    <div class="speaker-info">
-                        <h3><a href="https://dannykaufman.io/" target="_blank">Danny Kaufman</a></h3>
-                        <p>Principal Scientist, Adobe Research</p>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <img src="images/jj_park.jpeg" alt="JJ (Jeong Joon) Park">
-                    <div class="speaker-info">
-                        <h3><a href="https://jjparkcv.github.io/" target="_blank">JJ (Jeong Joon) Park</a></h3>
-                        <p>Assistant Professor, University of Michigan</p>
-                    </div>
-                </div>
-                <!-- <div class="speaker">
-                    <img src="images/konrad_schindler.jpeg" alt="Konrad Schindler">
-                    <div class="speaker-info">
-                        <h3><a href="https://scholar.google.com/citations?user=FZuNgqIAAAAJ&hl=en" target="_blank">Konrad Schindler</a></h3>
-                        <p>Professor, ETH Zurich</p>
-                    </div>
-                </div> -->
-                <div class="speaker">
-                    <img src="images/tamar_shinar.png" alt="Tamar Shinar">
-                    <div class="speaker-info">
-                        <h3><a href="https://www.cs.ucr.edu/~shinar/" target="_blank">Tamar Shinar</a></h3>
-                        <p>Associate Professor, UC Riverside</p>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <img src="images/jiajun_wu.jpg" alt="Jiajun Wu">
-                    <div class="speaker-info">
-                        <h3><a href="https://jiajunwu.com/" target="_blank">Jiajun Wu</a></h3>
-                        <p>Assistant Professor, Stanford University</p>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <img src="images/xiaoyu_xiang.jpeg" alt="Xiaoyu Xiang">
-                    <div class="speaker-info">
-                        <h3><a href="https://xiaoyux1ang.github.io/" target="_blank">Xiaoyu Xiang</a></h3>
-                        <p>Tech Lead, Meta Reality Labs</p>
-                    </div>
-                </div>
-                <!-- <div class="speaker">
-                    <img src="images/wei_xu.jpg" alt="Wei Xu">
-                    <div class="speaker-info">
-                        <h3><a href="https://sites.google.com/site/weixusbu2012" target="_blank">Wei Xu</a></h3>
-                        <p>Staff Computational Scientist, Trustworthy Artificial Intelligence (TAI) Group Lead, Brookhaven National Laboratory</p>
-                        <p>Research Professor, Stony Brook University</p>
-                    </div>
-                </div> -->
-                <div class="speaker">
-                    <img src="images/xiaoxiang_zhu.jpg" alt="Xiaoxiang Zhu">
-                    <div class="speaker-info">
-                        <h3><a href="https://www.asg.ed.tum.de/sipeo/team/zhu/" target="_blank">Xiaoxiang Zhu</a></h3>
-                        <p>Professor, Technical University of Munich</p>
-                    </div>
-                </div>
+                <h2>Speakers</h2>
+                <p>To be announced. Invitations have not yet been sent. Confirmed or tentatively confirmed speakers will be listed here with their participation status.</p>
             </section>
-
 
             <section id="cfp" class="location">
-                <h2>Call for Papers</h2>
-                <span>We provide more submission details: <b><a href="./cfp.html" target="_blank">Guidance for 3D4Science CFP at CVPR 2026</a></b>.</span>
-                <br>
-                <span><b>OpenReview submission portal</b>: <a href="https://openreview.net/group?id=thecvf.com/CVPR/2026/Workshop/3D4S" target="_blank">https://openreview.net/group?id=thecvf.com/CVPR/2026/Workshop/3D4S</a></span>
-                <div class="important-dates">
-                    <b>Tentative important dates <span style="color: red;">(deadline updated!)</span> (AoE time):</b>
-                    <ul>
-                        <li>Abstract Submission Deadline: April 5, 2026</li>
-                        <li>Paper Submission Deadline: April 7, 2026</li>
-                        <li>Review Bidding Period: April 5 - April 7, 2026</li>
-                        <li>Review Deadline: April 25, 2026</li>
-                        <li>Acceptance/Rejection Notification Date: April 27, 2026</li>
-                        <li>Camera-Ready Submission: May 14 2026</li>
-                        <li>Workshop Date: June 4, 2026</li>
-                    </ul>
-                </div>
+                <h2>Call for papers</h2>
+                <p><strong>Submissions are not yet open.</strong> We plan a non-archival workshop with peer-reviewed papers, contributed talks, and posters. Accepted papers will be shared through OpenReview under the announced submission terms and will not appear in IEEE/CVF proceedings.</p>
+                <p>We welcome methods, systems, applications, benchmarks, and negative results with a clear scientific 3D/4D modeling objective. Submission formatting will follow the applicable CVPR 2027 instructions.</p>
+                <h3>Tentative important dates</h3>
+                <p>All deadlines are at 23:59 Anywhere on Earth (AoE). Paper dates are proposed and will be confirmed when the CFP opens.</p>
+                <ul>
+                    <li><strong>Abstract registration:</strong> February 15, 2027</li>
+                    <li><strong>Paper submission:</strong> February 19, 2027</li>
+                    <li><strong>Author notification:</strong> March 22, 2027</li>
+                    <li><strong>Final non-archival versions:</strong> April 23, 2027</li>
+                    <li><strong>Workshop:</strong> June 20 or 21, 2027 (assigned by CVPR)</li>
+</ul>
+                <p><a href="cfp.html"><strong>Read the proposed submission and review guidelines</strong></a></p>
             </section>
-
-            <!-- <section id="" class="Support">
-                <h2>Travel Support</h2>
-                <p>We are excited to offer a limited number of free workshop registrations for CVPR 2026, exclusively for full-time students attending in person. This initiative aims to support early-career researchers while fostering diversity, equity, and inclusion (DEI) in the academic community.</p>
-                <ul style="list-style-type:none;">
-                    <li><strong>Selection Criteria:</strong> Applications will be evaluated based on the strength of the submitted materials. Priority will be given to students presenting papers at our workshop who lack alternative travel support.</li>
-                    <li><strong>How to Apply:</strong>
-                        <ul>
-                            <li>Personal & Academic Details: Name, affiliation, and relevant academic information</li>
-                            <li>CV/Resume</li>
-                            <li>Paper ID: Accepted or submitted to our workshop</li>
-                            <li>Statement of Interest: A brief paragraph explaining how this opportunity will benefit your research and career</li>
-                            <li>Attendance Confirmation: A clear statement confirming that you will attend in person</li>
-                        </ul>
-                    </li>
-                  </ul>
-            </section> -->
 
             <section id="schedule">
-                <h2>Schedule</h2>
-                <p>All times are in Denver Time (GMT-6).</p>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Denver Time (GMT-6)</th>
-                            <th>Event</th>
-                        </tr>
-                    </thead>
+                <h2>Preliminary workshop schedule</h2>
+                <p>Proposed 4.5-hour, in-person program. This is an illustrative morning block in Seattle local time; CVPR will assign the day and session. Invited slots do not indicate confirmed speakers.</p>
+                <div class="table-responsive"><table class="table table-striped">
+                    <thead><tr><th scope="col">Seattle local time</th><th scope="col">Session</th></tr></thead>
                     <tbody>
-                        <tr>
-                            <td>7:30-7:40</td>
-                            <td>Opening Remarks</td>
-                        </tr>
-                        <tr>
-                            <td>7:40-8:00</td>
-                            <td>Oral Talks</td>
-                        </tr>
-                        <tr>
-                            <td>8:00-8:30</td>
-                            <td>Invited Talk 1: Xiaoxiang Zhu</td>
-                        </tr>
-                        <tr>
-                            <td>8:30-9:00</td>
-                            <td>Invited Talk 2: Tamar Shinar<br>
-                                Title: "Reconstruction of implicit surfaces from fluid particles using convolutional neural networks"<br>
-                                Abstract: We present a network-based method for reconstructing signed distance functions from fluid particles. Particles are mapped to a regular grid via a weighting kernel and processed by a CNN, with regression-based regularization that reduces surface noise while preserving high-curvature features. This yields superior spatial smoothness and temporal coherence, with robust behavior across varying sampling densities and thin features.  We further accelerate the reconstruction scheme through algorithmic modifications, achieving 33x single-frame speedup with no perceptible quality loss, making the surface reconstruction fast enough for use within a simulation framework. We also present a benchmark suite for machine-learning surface tension computation, addressing the challenge of accurate interface curvature estimation in particle-based fluid simulations.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>9:00-9:30</td>
-                            <td>Invited Talk 3: Ali Haddad<br>
-                                Title: "Physical AI in the Operating Room: Real-Time 3D/4D Scene Understanding for Surgical Intelligence"<br>
-                                Abstract: "The operating room is one of the most demanding scene understanding problems in science: deformable and unstructured anatomy, heavy occlusion from instruments and blood, fluorescence and white-light imaging fused in the same field, viewpoint and lighting that change second-to-second, and a hard real-time budget on edge hardware. This talk presents how XRlabs is building intraoperative intelligence for this setting — combining real-time perception on a surgical exoscope with patient-specific digital twins at the edge of the surgical field. I'll walk through the geometry stack behind it: heterogeneous-view reconstruction across exoscope tool detection; and the use of synthetic surgical scenarios to train and validate perception and policy models before they ever touch a patient. I'll close with lessons from our first-in-human deployment of Physical AI in cranial neurosurgery, and the open 3D/4D research questions that, if solved, would meaningfully shift what is possible in surgery."
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>9:30-10:00</td>
-                            <td>Invited Talk 4: Jiajun Wu<br>
-                                Title: Seeing 4D Fluid Fields
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>10:00-10:30</td>
-                            <td>Invited Talk 5: Jeong Joon Park<br>
-                                Title: Beyond Neural Operators Towards Neural Solvers<br>
-                                Abstract: ""Neural operators learn fast approximate mappings from PDE parameters to solutions. In this talk, I will talk about Error-Conditioned Neural Solvers (ENS), which internalize the correction loop within the network itself. Our neural solvers recurrently correct its predictions by computing the PDE residual field of the current prediction and passing it as an explicit input to the network, until the residual converges to a consistent floor. ENS achieves state-of-the-art prediction accuracy across PDE families while maintaining physical accuracy across diverse extrapolation settings, including zero-shot parameter shifts, super-resolution, and cross-equation transfer."
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>10:30-11:00</td>
-                            <td>Invited Talk 6: Xiaoyu Xiang<br>
-                                Title: "Toward Interactable 3D World Generation"
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>11:00-11:30</td>
-                            <td>Invited Talk 7: Danny Kaufman<br>
-                                Title: "Multiscale Adaptive Simulation for Predictive Soft-Body Modeling"<br>
-                                Abstract: "Physics-based simulation methods are essential tools across applications ranging from scientific modeling and robotics to fashion and entertainment. A fundamental limitation to their application, however, is resolution. As we increase resolution, recently developed simulation methods like IPC can now can deliver unprecedented fidelity, expressiveness and accuracy -- opening the door to many new applications. However, increased resolution incurs significant and potentially prohibitive costs. To address these challenges a range of fast simulations methods have recently been developed that provide impressive performance acceleration at the cost of significantly degraded fidelity and reliability. Unfortunately, this makes them unsuitable for building models of our real world. So on the one hand we have fast performance with inaccuracies and instabilities and, on the other, slow performance with predictive and reliable output. Is there no free lunch?
-
-                                In this talk I'll cover our recent work on addressing this question via multiscale and adaptive strategies. I'll first cover our work on Progressive Simulation methods. Progressive Simulation is a multiscale framework for predictive, scalable simulation across a hierarchy of efficient solution approximations that preserve invariants and converge at finest levels. I'll then cover our companion works on In-Timestep Remeshing methods that temporally adapt resolution, in-application, to optimally move compute resources where they're most needed at each instant. I'll discuss applications were these methods provide efficient, scalable simulations and surrogates for digital reproduction and inverse modeling performed at orders of magnitude less cost than previously possible."
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>11:30-noon</td>
-                            <td>Invited Talk 8: Chuang Gan<br>
-                                Title: "Building AI Agents with Physical Common Sense"
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>noon-12:30pm</td>
-                            <td>Poster</td>
-                        </tr>
+                        <tr><td>08:30 - 08:40</td><td>Opening and scientific evaluation agenda</td></tr>
+                        <tr><td>08:40 - 09:10</td><td>Invited slot 1: measurement-grounded 3D/4D reconstruction</td></tr>
+                        <tr><td>09:10 - 09:40</td><td>Invited slot 2: simulation-driven geometric design</td></tr>
+                        <tr><td>09:40 - 10:10</td><td>Three contributed talks</td></tr>
+                        <tr><td>10:10 - 10:55</td><td>Poster session and coffee break</td></tr>
+                        <tr><td>10:55 - 11:25</td><td>Invited slot 3: independent validation and domain science</td></tr>
+                        <tr><td>11:25 - 11:55</td><td>Three contributed talks</td></tr>
+                        <tr><td>11:55 - 12:30</td><td>Moderated discussion: when does an agent improve scientific modeling?</td></tr>
+                        <tr><td>12:30 - 12:50</td><td>Small-group evaluation clinic</td></tr>
+                        <tr><td>12:50 - 13:00</td><td>Group reports and closing</td></tr>
                     </tbody>
-                </table>
+                </table></div>
+                <p>Invited slots include questions; each contributed talk lasts 10 minutes including questions. All accepted papers will be offered a poster slot. The discussion and small-group clinic will examine concrete failure cases and independent validation tests.</p>
             </section>
-            <!-- <section id="schedule">
-                <h2>Schedule</h2>
-                <p>All times are in Vancouver Time (GMT-8).</p>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Vancouver Time (GMT-8)</th>
-                            <th>Event</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>8:50-9:00</td>
-                            <td>Opening Remarks</td>
-                        </tr>
-                        <tr>
-                            <td>9:00-9:30</td>
-                            <td>Invited Talk 1</td>
-                        </tr>
-                        <tr>
-                            <td>9:35-10:05</td>
-                            <td>Invited Talk 2</td>
-                        </tr>
-                        <tr>
-                            <td>10:10-10:40</td>
-                            <td>Invited Talk 3</td>
-                        </tr>
-                        <tr>
-                            <td>10:45-11:15</td>
-                            <td>Oral Presentations</td>
-                        </tr>
-                        <tr>
-                            <td>11:20-11:50</td>
-                            <td>Invited Talk 4</td>
-                        </tr>
-                        <tr>
-                            <td>11:55-12:25</td>
-                            <td>Invited Talk 5</td>
-                        </tr>
-                        <tr>
-                            <td>12:25-12:30</td>
-                            <td>Closing Remarks</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section> -->
-
 
             <section id="organizers" class="Organizers">
                 <h2>Organizers</h2>
                 <div class="organizer">
-                    <img src="images/wuyang_chen.jpg" alt="Wuyang Chen">
+                    <img src="images/wuyang_chen.jpg" alt="Wuyang Chen" loading="lazy">
                     <div class="organizer-info">
-                        <h3><a href="https://delta-lab-ai.github.io/" target="_blank">Wuyang Chen</a></h3>
+                        <h3><a href="https://delta-lab-ai.github.io/" target="_blank" rel="noopener noreferrer">Wuyang Chen</a></h3>
                         <p>Assistant Professor, Simon Fraser University</p>
+                        <p>Primary contact: <a href="mailto:wuyang@sfu.ca">wuyang@sfu.ca</a></p>
                     </div>
                 </div>
                 <div class="organizer">
-                    <img src="images/marissa.jpeg" alt="Marissa Ramirez de Chanlatte">
+                    <img src="images/marissa.jpeg" alt="Marissa Ramirez de Chanlatte" loading="lazy">
                     <div class="organizer-info">
-                        <h3><a href="https://scholar.google.com/citations?user=ByxEbZEAAAAJ&hl=en&oi=ao" target="_blank">Marissa Ramirez de Chanlatte</a></h3>
-                        <!-- <p>Lawrence Berkeley National Lab</p> -->
+                        <h3><a href="https://scholar.google.com/citations?user=ByxEbZEAAAAJ" target="_blank" rel="noopener noreferrer">Marissa Ramirez de Chanlatte</a></h3>
                         <p>Playground Global</p>
+                        <p>Scientific geometry and uncertainty</p>
                     </div>
                 </div>
                 <div class="organizer">
-                    <img src="images/peter_chen.png" alt="Zhiwen Fan">
+                    <img src="images/peter_chen.png" alt="Peter Yichen Chen" loading="lazy">
                     <div class="organizer-info">
-                        <h3><a href="https://www.peterchencyc.com/" target="_blank">Peter Yichen Chen</a></h3>
-                        <p>Assistant Professor, The University of British Columbia</p>
+                        <h3><a href="https://www.peterchencyc.com/" target="_blank" rel="noopener noreferrer">Peter Yichen Chen</a></h3>
+                        <p>Assistant Professor, University of British Columbia</p>
+                        <p>Physical simulation and agentic modeling</p>
                     </div>
                 </div>
                 <div class="organizer">
-                    <img src="images/chuhang_zou.png" alt="Chuhang Zou">
+                    <img src="images/chuhang_zou.png" alt="Chuhang Zou" loading="lazy">
                     <div class="organizer-info">
-                        <h3><a href="https://zouchuhang.github.io/" target="_blank">Chuhang Zou</a></h3>
-                        <p>Staff Research Scientist, Meta Reality Labs</p>
+                        <h3><a href="https://zouchuhang.github.io/" target="_blank" rel="noopener noreferrer">Chuhang Zou</a></h3>
+                        <p>Staff AI Research Scientist, Meta Reality Labs</p>
+                        <p>3D generative AI and world modeling</p>
                     </div>
                 </div>
                 <div class="organizer">
-                    <img src="images/zhiwen_fan.jpg" alt="Zhiwen Fan">
+                    <img src="images/dan_martin.jpg" alt="Daniel Martin" loading="lazy">
                     <div class="organizer-info">
-                        <h3><a href="https://zhiwenfan.github.io/" target="_blank">Zhiwen ("Aaron") Fan</a></h3>
-                        <p>Assistant Professor, Texas A&M University</p>
+                        <h3><a href="https://amcr.lbl.gov/profile/dfmartin/" target="_blank" rel="noopener noreferrer">Daniel Martin</a></h3>
+                        <p>Lawrence Berkeley National Laboratory</p>
+                        <p>Numerical methods and scientific simulation</p>
                     </div>
                 </div>
                 <div class="organizer">
-                    <img src="images/dan_martin.jpg" alt="Daniel Martin">
+                    <img src="images/michael_mahoney.png" alt="Michael Mahoney" loading="lazy">
                     <div class="organizer-info">
-                        <h3><a href="https://amcr.lbl.gov/profile/dfmartin/" target="_blank">Daniel Martin</a></h3>
-                        <p>Group Lead, Applied Numerical Algorithms Group, Lawrence Berkeley National Laboratory</p>
+                        <h3><a href="https://www.stat.berkeley.edu/~mmahoney/" target="_blank" rel="noopener noreferrer">Michael Mahoney</a></h3>
+                        <p>UC Berkeley; ICSI; Lawrence Berkeley National Laboratory</p>
+                        <p>Secondary contact: <a href="mailto:mmahoney@stat.berkeley.edu">mmahoney@stat.berkeley.edu</a></p>
                     </div>
                 </div>
-                <div class="speaker">
-                    <img src="images/michael_mahoney.png" alt="Michael Mahoney">
-                    <div class="speaker-info">
-                        <h3><a href="https://www.stat.berkeley.edu/~mmahoney/" target="_blank">Michael Mahoney</a></h3>
-                        <p>Professor, University of California at Berkeley</p>
-                        <p>Vice President, International Computer Science Institute (ICSI)</p>
-                        <p>Group Lead, Machine Learning and Analytics Group, Lawrence Berkeley National Laboratory</p>
-                    </div>
-                </div>
+            </section>
+
+            <section id="participation">
+                <h2>Participation and responsible scientific modeling</h2>
+                <p>We welcome researchers across disciplines and career stages, including students and newcomers to scientific computing. Posters, written audience questions, and small-group discussion provide multiple ways to participate.</p>
+                <p>Contributions should document data rights, physical assumptions, uncertainty, and failure cases. Generated measurements must be labeled, and computational predictions must be distinguished from experimental evidence. We encourage reproducible workflows and appropriate human review of consequential scientific or engineering decisions.</p>
+                <p>The workshop is planned in person. Everyone, including speakers, must register in advance. Talks will be recorded through CVPR's provided Zoom room under conference procedures and speaker permissions. Remote access and recordings will follow CVPR arrangements; Zoom links will be available only through the CVPR virtual site.</p>
+                <p>Student travel support and sponsorship are not yet confirmed. Contact <a href="mailto:3d4sworkshop@gmail.com">3d4sworkshop@gmail.com</a> about participation or support.</p>
+                <p>Conference logistics follow the <a href="https://cvpr.thecvf.com/Conferences/2027/CallForWorkshops" target="_blank" rel="noopener noreferrer">CVPR 2027 workshop requirements</a>.</p>
+            </section>
+
+            <section id="previous-editions">
+                <h2>Previous editions</h2>
+                <ul>
+                    <li><a href="2026/index.html">CVPR 2026: 2nd Edition</a> | <a href="2026/cfp.html">Call for papers</a></li>
+                    <li><a href="https://sites.google.com/view/wacv-site-3d-geometry/home" target="_blank" rel="noopener noreferrer">WACV 2024: 1st Edition</a></li>
+                </ul>
             </section>
 
         </article>
@@ -385,10 +194,9 @@
 
     <div id="footer"></div>
 
-    <script src="./load-templates.js"></script>
+    <script src="./load-templates.js?v=2027-agentic"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="./custom.js"></script>
 </body>
 </html>
