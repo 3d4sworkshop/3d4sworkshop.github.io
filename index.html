@@ -26,15 +26,15 @@
             <section id="home" class="Description">
                 <h2>Description</h2>
                 <p class="scope-statement">We study AI-agent methods that reconstruct, generate, or refine 3D structures and time-varying 3D models for scientific inference, physical simulation, or function-driven design, evaluated beyond visual appearance.</p>
-                <p>Scientific simulation and design require 3D/4D models whose geometry, motion, and physical properties support reliable predictions. The third 3D4S workshop explores AI agents that reconstruct, generate, and refine these models through measurement, geometric verification, and numerical simulation. We bring together computer vision, graphics, scientific computing, and domain science to study tool orchestration, uncertainty, physical validity, and evaluation beyond visual appearance. Through invited talks, contributed papers, posters, and a structured discussion, participants will develop shared evaluation criteria and reproducible workflows for agentic modeling in engineering, environmental science, biomedicine, and materials research.</p>
+                <p>Scientific simulation and design require 3D/4D models whose geometry, motion, and physical properties support reliable predictions. The third 3D4S workshop explores AI agents that reconstruct, generate, and refine these models through measurement, geometric verification, and numerical simulation. We bring together computer vision, graphics, scientific computing, and domain science to study tool orchestration, uncertainty, physical validity, and evaluation beyond visual appearance. Through invited talks, contributed papers, posters, and discussions, participants will develop shared evaluation criteria and reproducible workflows for agentic modeling in engineering, environmental science, biomedicine, and materials research.</p>
                 <p><strong>What do we mean by agentic?</strong> An agent selects or revises modeling actions using observations, tool outputs, or feedback. We welcome tool-using language and vision-language agents, learned controllers, and human-agent collaboration. <strong>4D means time-varying 3D</strong>, including geometry, motion, and physical properties.</p>
                 <p>The scientific question comes first: a force, flux, deformation, material property, or functional constraint. This raises three questions:</p>
                 <ul>
-                    <li><strong>Q1:</strong> How can agents integrate heterogeneous measurements to reconstruct reliable 3D/4D models and identify missing evidence?</li>
-                    <li><strong>Q2:</strong> How can scientific feedback guide geometry generation, simulation, and design toward measurable physical objectives?</li>
-                    <li><strong>Q3:</strong> How can we evaluate accuracy, uncertainty, and computational efficiency independently of visual appearance?</li>
+                    <li><strong>Q1:</strong> How can agents integrate heterogeneous images, depth, tomography, and trajectories to reconstruct reliable 3D/4D models and identify missing evidence?</li>
+                    <li><strong>Q2:</strong> How can scientific feedback guide geometry generation, meshing, physical identification, and inverse design toward measurable physical objectives?</li>
+                    <li><strong>Q3:</strong> How can we evaluate accuracy, uncertainty, and computational efficiency, including the benefit of adaptive agents over fixed workflows with matched resources?</li>
                 </ul>
-                <p>Building on <a href="https://sites.google.com/view/wacv-site-3d-geometry/home">WACV 2024</a> and <a href="2026/index.html">CVPR 2026</a>, our third edition connects reconstruction and generation to agent-directed scientific workflows. CVPR 2026 brought together 150 attendees and received 21 paper submissions.</p>
+                <p>Building on <a href="https://sites.google.com/view/wacv-site-3d-geometry/home">WACV 2024</a> and <a href="2026/index.html">CVPR 2026</a>, our third edition extends scientific geometry reconstruction and generation to agent-directed modeling: observe or specify, build, verify, simulate or measure, diagnose, and revise. CVPR 2026 brought together 150 attendees and received 21 paper submissions.</p>
             </section>
 
             <section id="topics" class="Topics">
@@ -47,7 +47,7 @@
                     <li><strong>Scientific tool use and collaboration.</strong> Adaptive tool selection, solver feedback, execution recovery, provenance, specialist agents, and human review, compared with fixed workflows using matched resources.</li>
                     <li><strong>Evaluation, uncertainty, and reproducibility.</strong> Independent validation, uncertainty propagation, negative results, held-out conditions, and scientific progress measured against compute and human effort.</li>
                 </ul>
-                <p><strong>Scientific Domains:</strong> Applications include engineering design, fluid and solid mechanics, environmental and geospatial science, biomedical modeling, scientific instruments, and molecular or crystal structures when geometry or dynamics is central to the task. Contributions may study one part of the modeling loop if they make the scientific objective explicit. Purely appearance-driven generation and generic agents without a substantive 3D/4D modeling connection fall outside the core scope.</p>
+                <p><strong>Scientific Domains:</strong> Applications include engineering design, fluid and solid mechanics, environmental and geospatial science, biomedical modeling, scientific instruments, and molecular or crystal structures when geometry or dynamics is central to the task. Purely appearance-driven generation and generic agents without a substantive 3D/4D modeling connection fall outside the core scope.</p>
             </section>
 
             <section id="speakers" class="Speakers">
@@ -65,33 +65,35 @@
                     <h3>Important Dates</h3>
                     <p>All submission deadlines are at 23:59 Anywhere on Earth (AoE).</p>
                     <ul>
-                        <li><strong>Abstract registration:</strong> February 15, 2027</li>
-                        <li><strong>Paper submission:</strong> February 19, 2027</li>
-                        <li><strong>Author notification:</strong> March 22, 2027</li>
+                        <li><strong>Abstract registration deadline:</strong> February 15, 2027</li>
+                        <li><strong>Paper submission deadline:</strong> February 19, 2027</li>
+                        <li><strong>Review bidding period:</strong> February 20-24, 2027</li>
+                        <li><strong>Reviewer deadline:</strong> March 12, 2027</li>
+                        <li><strong>Acceptance/rejection notification:</strong> March 22, 2027</li>
                         <li><strong>Final non-archival versions:</strong> April 23, 2027</li>
+                        <li><strong>Workshop date:</strong> June 20 or 21, 2027, assigned by CVPR</li>
                     </ul>
                 </div>
             </section>
 
             <section id="schedule">
                 <h2>Schedule</h2>
-                <p>The half-day workshop runs from <strong>8:00 am to 12:30 pm</strong>, Seattle local time. The program includes invited talks, contributed talks, posters, and discussion.</p>
+                <p>The 4.5-hour, in-person workshop runs from <strong>8:00 am to 12:30 pm</strong> or <strong>12:30 pm to 5:00 pm</strong>, Seattle local time. The program includes five invited talks, one contributed-talk session, posters, and a five-minute closing.</p>
                 <div class="table-responsive"><table class="table table-striped">
-                    <thead><tr><th scope="col">Seattle local time</th><th scope="col">Session</th></tr></thead>
+                    <thead><tr><th scope="col">Morning (Seattle time)</th><th scope="col">Afternoon (Seattle time)</th><th scope="col">Session</th></tr></thead>
                     <tbody>
-                        <tr><td>08:00 - 08:10</td><td>Opening and scientific evaluation agenda</td></tr>
-                        <tr><td>08:10 - 08:40</td><td>Invited slot 1: measurement-grounded 3D/4D reconstruction</td></tr>
-                        <tr><td>08:40 - 09:10</td><td>Invited slot 2: simulation-driven geometric design</td></tr>
-                        <tr><td>09:10 - 09:40</td><td>Three contributed talks</td></tr>
-                        <tr><td>09:40 - 10:25</td><td>Poster session and coffee break</td></tr>
-                        <tr><td>10:25 - 10:55</td><td>Invited slot 3: independent validation and domain science</td></tr>
-                        <tr><td>10:55 - 11:25</td><td>Three contributed talks</td></tr>
-                        <tr><td>11:25 - 12:00</td><td>Moderated discussion: when does an agent improve scientific modeling?</td></tr>
-                        <tr><td>12:00 - 12:20</td><td>Small-group evaluation clinic</td></tr>
-                        <tr><td>12:20 - 12:30</td><td>Group reports and closing</td></tr>
+                        <tr><td>08:00 - 08:10</td><td>12:30 - 12:40</td><td>Opening remarks and trustworthy agentic 3D agenda</td></tr>
+                        <tr><td>08:10 - 08:45</td><td>12:40 - 13:15</td><td>Invited Talk 1</td></tr>
+                        <tr><td>08:45 - 09:20</td><td>13:15 - 13:50</td><td>Invited Talk 2</td></tr>
+                        <tr><td>09:20 - 09:50</td><td>13:50 - 14:20</td><td>Three contributed talks, 10 minutes each including questions</td></tr>
+                        <tr><td>09:50 - 10:40</td><td>14:20 - 15:10</td><td>Poster session and coffee break</td></tr>
+                        <tr><td>10:40 - 11:15</td><td>15:10 - 15:45</td><td>Invited Talk 3</td></tr>
+                        <tr><td>11:15 - 11:50</td><td>15:45 - 16:20</td><td>Invited Talk 4</td></tr>
+                        <tr><td>11:50 - 12:25</td><td>16:20 - 16:55</td><td>Invited Talk 5</td></tr>
+                        <tr><td>12:25 - 12:30</td><td>16:55 - 17:00</td><td>Closing</td></tr>
                     </tbody>
                 </table></div>
-                <p>Invited slots include questions; each contributed talk lasts 10 minutes including questions. All accepted papers will be offered a poster slot. The discussion and small-group clinic will examine concrete failure cases and independent validation tests.</p>
+                <p>Each contributed talk lasts 10 minutes including questions. All accepted papers receive a poster slot; contributed talks are selected for scientific quality and complementary perspectives. The workshop does not include a competition or challenge.</p>
             </section>
 
             <section id="organizers" class="Organizers">
@@ -115,20 +117,6 @@
                     <div class="organizer-info">
                         <h3><a href="https://zouchuhang.github.io/" target="_blank" rel="noopener noreferrer">Chuhang Zou</a></h3>
                         <p>Staff AI Research Scientist, Meta Reality Labs</p>
-                    </div>
-                </div>
-                <div class="organizer">
-                    <img src="images/peter_chen.png" alt="Peter Yichen Chen" loading="lazy">
-                    <div class="organizer-info">
-                        <h3><a href="https://www.peterchencyc.com/" target="_blank" rel="noopener noreferrer">Peter Yichen Chen</a></h3>
-                        <p>Assistant Professor, University of British Columbia</p>
-                    </div>
-                </div>
-                <div class="organizer">
-                    <img src="images/zhiwen_fan.jpg" alt="Zhiwen Fan">
-                    <div class="organizer-info">
-                        <h3><a href="https://zhiwenfan.github.io/" target="_blank">Zhiwen ("Aaron") Fan</a></h3>
-                        <p>Assistant Professor, Texas A&M University</p>
                     </div>
                 </div>
                 <div class="organizer">
